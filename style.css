@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: #c83737;
+    /* background-color: #c83737; */
 }
 /* GLOBAL */
 /* .input-container{
@@ -39,6 +39,7 @@ main#login {
     height: 100vh;
     width: 100vw;
     position: relative;
+    background-color: #c83737;
 }
 main#login .container {
     height: 100%;
@@ -79,6 +80,17 @@ main#login .container .background {
     width: 100%;
     background-color: #fff;
 }
+main#login .container .background .social {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+main#login .container .background .social .icon {
+    padding: 25px;
+    color:#c83737;
+}
 main#login .container .content {
     position: absolute;
     height: 100vh;
@@ -88,6 +100,7 @@ main#login .container .content {
     align-items: center;
     justify-content: center;
 }
+
 main#login .container .content .card {
     position: absolute;
     height: 50vh;
@@ -100,5 +113,16 @@ main#login .container .content .card {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:#000;
+    color:#9a9a9a;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;  
+}
+footer p {
+    float: right;
+    padding: 10px;
+    color:#9a9a9a;
 }
