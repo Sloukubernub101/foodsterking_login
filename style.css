@@ -105,7 +105,7 @@ main#login .container .content .card {
     position: absolute;
     height: 50vh;
     width: 40vw;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
     background-color: whitesmoke;
     border: 5px solid whitesmoke;
     border-radius: 10px;
@@ -125,4 +125,30 @@ footer p {
     float: right;
     padding: 10px;
     color:#9a9a9a;
+}
+@media(max-width:768px){
+    main#login .logo {
+        width: 100vw;
+        height: 50vh;
+    }
+    main#login .logo img {
+        top: 0;
+        position: absolute;
+        height: 300px;
+    }
+    main#login .background .social  {
+        visibility: hidden;
+    }
+    main#login .container .content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    main#login .container .content .card {
+        position: absolute;
+        height: 50vh;
+        width: 90vw;
+        bottom: 20%;
+        text-align: center;
+    }
 }
