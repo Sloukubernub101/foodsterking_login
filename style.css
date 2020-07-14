@@ -38,7 +38,8 @@ input:focus {
 main#login {
     height: 100vh;
     width: 100vw;
-    position: relative;
+    position: absolute;
+    /* background-image: linear-gradient(0deg,#c83737,#fd1c1c); */
     background-color: #c83737;
 }
 main#login .container {
@@ -58,38 +59,15 @@ main#login .logo {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 main#login .logo img {
-    height: 100%;
-    width:auto ;
-}
-main#login .container #wave {
-    position: relative  ;
-    width: 100vw;
-    height: 50vh;
-}
-main#login .container #wave img {
     position: absolute;
-    height: 20%;
-    width: 100%;
-    bottom: -1px;
-}
-main#login .container .background {
-    position: relative;
-    height: 50vh;
-    width: 100%;
-    background-color: #fff;
-}
-main#login .container .background .social {
     height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-}
-main#login .container .background .social .icon {
-    padding: 25px;
-    color:#c83737;
+    width:70%;
+    max-height:100% ;
+    max-width: 70%;
+    z-index: 10;
 }
 main#login .container .content {
     position: absolute;
@@ -105,15 +83,15 @@ main#login .container .content .card {
     position: absolute;
     height: 50vh;
     width: 40vw;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
-    background-color: whitesmoke;
-    border: 5px solid whitesmoke;
+    /* box-shadow: 0 0 5px 0 rgba(0,0,0,0.5); */
+    background-color: rgba(0,0,0,0.5);
+    /* border: 5px solid whitesmoke; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:#9a9a9a;
+    color:#fff;
 }
 footer {
     position: absolute;
